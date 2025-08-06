@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    form {
+      max-width: 600px;
+      margin-top: 20px;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Registration Page</h1>
+    <p>Enhancing your experience with structured HTML content and forms</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📌 Why Join Us?</h2>
+      <ul>
+        <li>Interactive and hands-on learning</li>
+        <li>Access to expert instructors</li>
+        <li>Certification upon completion</li>
+        <li>Flexible learning schedule</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📊 Course Overview</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Duration</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML & CSS Basics</td>
+            <td>4 weeks</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>Responsive Web Design</td>
+            <td>3 weeks</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>JavaScript Essentials</td>
+            <td>5 weeks</td>
+            <td>Advanced</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>🖼️ Meet Our Team</h2>
+      <img src="https://via.placeholder.com/500x200" alt="Our Team" width="100%" />
+    </section>
+
+    <section>
+      <h2>📝 Registration Form</h2>
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g. Jane Doe" required autocomplete="name" minlength="3" />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678" pattern="[0-9]{10}" required />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Course Selection</legend>
+
+          <label for="course">Choose a course:</label>
+          <select id="course" name="course" required>
+            <option value="">-- Select a course --</option>
+            <option value="html">HTML & CSS Basics</option>
+            <option value="responsive">Responsive Design</option>
+            <option value="js">JavaScript Essentials</option>
+          </select>
+
+          <label>Preferred Schedule:</label>
+          <label><input type="radio" name="schedule" value="morning" required /> Morning</label>
+          <label><input type="radio" name="schedule" value="evening" /> Evening</label>
+
+          <label><input type="checkbox" name="newsletter" checked readonly /> Subscribe to newsletter (auto-subscribed)</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Details</legend>
+
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color" value="#0000ff" />
+
+          <label for="feedback">Any Comments:</label>
+          <textarea id="feedback" name="feedback" placeholder="Share your thoughts..." maxlength="300"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Web Training Institute</p>
+  </footer>
+
+</body>
+</html>
